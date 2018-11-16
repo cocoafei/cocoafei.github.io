@@ -5,202 +5,147 @@
     <description>来自一个脱发程序员gg的分享！</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 15 Nov 2018 01:30:15 +0800</pubDate>
-    <lastBuildDate>Thu, 15 Nov 2018 01:30:15 +0800</lastBuildDate>
+    <pubDate>Fri, 16 Nov 2018 18:43:32 +0800</pubDate>
+    <lastBuildDate>Fri, 16 Nov 2018 18:43:32 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title> iOS 通用链接(Universal Link)</title>
-        <description>&lt;h2 id=&quot;ios-通用链接universal-link&quot;&gt;iOS 通用链接(Universal Link)&lt;/h2&gt;
+        <title>脱发治疗方法总结</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/cocoafei/BlogImgs/master/hair/long_hair.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Apple通用链接：&lt;/strong&gt;一种能够方便的通过传统 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP&lt;/code&gt; 链接来启动 APP, 使用相同的网址打开网站和APP。&lt;/p&gt;
+&lt;p&gt;写这篇博客，总结一下自己接近 10 年期间治疗脂溢性脱发（雄性脱发）的方法，以及走过的弯路，踩过的坑。&lt;/p&gt;
 
-  &lt;p&gt;通过唯一的网址, 不需要特别的schema就可以链接一个特定的视图到APP里面 。&lt;/p&gt;
+&lt;h2 id=&quot;警告&quot;&gt;警告&lt;/h2&gt;
 
-  &lt;p&gt;&lt;strong&gt;比如：&lt;/strong&gt;在微信中使用了&lt;strong&gt;通用链接&lt;/strong&gt;, 那么用户在Safari、UIWebView或者 WKWebView点击一个链接, iOS设备上的微信app怎会在微信里面&lt;strong&gt;自动打开这个页面&lt;/strong&gt;, 如果&lt;strong&gt;没有安装&lt;/strong&gt;则在Safrai中&lt;strong&gt;打开响应链接&lt;/strong&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h4 id=&quot;️-文章提及的药物和方法都是自己测试人体质有差异-️&quot;&gt;⚠️ &lt;strong&gt;文章提及的药物和方法都是自己测试，人体质有差异&lt;/strong&gt; ⚠️&lt;/h4&gt;
+&lt;h4 id=&quot;️-作用和效果都是按照自己的理解描述可能存在错误-️&quot;&gt;⚠️ &lt;strong&gt;作用和效果都是按照自己的理解描述，可能存在错误&lt;/strong&gt; ⚠️&lt;/h4&gt;
+&lt;h4 id=&quot;️-治疗脱发一定到正规医院皮肤科就诊并遵医嘱治疗-️&quot;&gt;⚠️ &lt;strong&gt;治疗脱发一定到正规医院皮肤科就诊，并遵医嘱治疗&lt;/strong&gt; ⚠️&lt;/h4&gt;
 
-&lt;h3 id=&quot;一系统要求&quot;&gt;一、系统要求：&lt;/h3&gt;
+&lt;h2 id=&quot;脱发治疗方法对比&quot;&gt;脱发治疗方法对比&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;iOS 9及以上&lt;/strong&gt;系统，iOS 9以下仍旧用&lt;strong&gt;URL Scheme&lt;/strong&gt;实现跳转。&lt;/p&gt;
+&lt;h3 id=&quot;非那雄胺&quot;&gt;非那雄胺&lt;/h3&gt;
 
-&lt;h3 id=&quot;二使用方法&quot;&gt;二、使用方法：&lt;/h3&gt;
+&lt;p&gt;口服药，也叫&lt;code class=&quot;highlighter-rouge&quot;&gt;保法止&lt;/code&gt;，是目前治疗雄性脱发最有效的口服药物，也是获得世界范围内普遍认可的药物。现在一般采取的方案，是口服非那雄胺和外喷米诺地尔喷剂，其中非那雄胺作用约占 80%，米诺地尔约占 20% 的作用，半年就可取得明显的效果。&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;在&lt;strong&gt;苹果开发者网站&lt;/strong&gt;中打开需要使用&lt;code class=&quot;highlighter-rouge&quot;&gt;Universal Link&lt;/code&gt;功能的App中的&lt;code class=&quot;highlighter-rouge&quot;&gt;Associated Domains&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;创建一个json格式的&lt;code class=&quot;highlighter-rouge&quot;&gt;apple-app-site-associatio&lt;/code&gt;,上传&lt;code class=&quot;highlighter-rouge&quot;&gt;apple-app-site-association&lt;/code&gt;到服务器根目录下。&lt;/li&gt;
-  &lt;li&gt;在&lt;strong&gt;AppDelegate&lt;/strong&gt;中实现相应的方法。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：目前治疗雄脱最有效的口服药物，亲测服用后有效。&lt;/p&gt;
 
-&lt;h3 id=&quot;三对比url-scheme&quot;&gt;三、对比URL Scheme&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：服用后性欲降低，且停药还是会脱发，也就是需要一直服药。其他缺点，楼主连续服用一年半时间，觉得雄性激素的降低还会影响思维敏捷度，后来停止口服保法止，只用外喷药米诺地尔。&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;由&lt;code class=&quot;highlighter-rouge&quot;&gt;其他应用&lt;/code&gt;跳转到App或App对应界面，或跳转到其他App&lt;code class=&quot;highlighter-rouge&quot;&gt;仍旧使用URL Scheme&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Universal Link&lt;/code&gt;适用于&lt;code class=&quot;highlighter-rouge&quot;&gt;App跳转功能&lt;/code&gt;，且待跳转功能配置文件存储在服务器，更加灵活。&lt;/li&gt;
-  &lt;li&gt;App已经安装的前提下：直接&lt;code class=&quot;highlighter-rouge&quot;&gt;启动App&lt;/code&gt;然后现实链接内容。&lt;/li&gt;
-  &lt;li&gt;App没有安装的前提下：Web上&lt;code class=&quot;highlighter-rouge&quot;&gt;继续显示&lt;/code&gt;链接内容。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：非那雄胺原本是用来治疗前列腺炎的，所以含有非那雄胺的药物不一定是用来治疗脱发，不同需求需要的剂量是不一样的。常见生产非那雄胺的厂家有默沙东、启悦、保列治、仙琚等等，一定要按照医嘱服药。&lt;/p&gt;
 
-&lt;h3 id=&quot;四参数以及安全性&quot;&gt;四、参数以及安全性&lt;/h3&gt;
+&lt;h3 id=&quot;米诺地尔&quot;&gt;米诺地尔&lt;/h3&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;由于路径完全是&lt;strong&gt;自定义&lt;/strong&gt;的，自由度很高，可以通过拼接路径的方式&lt;strong&gt;带参数&lt;/strong&gt;；例如/path/x/parameter。&lt;/li&gt;
-  &lt;li&gt;未安装App会直接在浏览器中继续打开链接，因此不能够带&lt;strong&gt;敏感信息&lt;/strong&gt;。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;外喷药物，属于血管扩张药物，刺激毛囊上皮细胞的增殖和分化。听说一些人眉毛不浓，用米诺涂抹后可以增粗。&lt;/p&gt;
 
-&lt;h3 id=&quot;五注意点&quot;&gt;五、注意点&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：外喷药物，副作用小。&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;首先你的&lt;strong&gt;服务器&lt;/strong&gt;必须得&lt;strong&gt;支持SSL&lt;/strong&gt;，必须支持&lt;strong&gt;HTTPS&lt;/strong&gt;；我们只需要把配置好的json文件上传到服务器中该域名的根目录下，言下之意，我们可以用&lt;strong&gt;GET请求&lt;/strong&gt;可以获取到https://www.example.com/apple-app-association；当我们的App在设备上第一次运行时，如果支持&lt;strong&gt;Associated Domains&lt;/strong&gt;功能，那么iOS会&lt;strong&gt;自动&lt;/strong&gt;去GET定义的Domain下的apple-app-site-association文件。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;服务器上apple-app-site-association的更新不会让iOS本地的apple-app-site-association&lt;code class=&quot;highlighter-rouge&quot;&gt;同步更新&lt;/code&gt;，即iOS只会在App第一次启动时&lt;code class=&quot;highlighter-rouge&quot;&gt;请求一次&lt;/code&gt;，以后除非App更新或重新安装，否则不会在每次打开时请求apple-app-site-association。&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;非系统原生App&lt;/code&gt;不一定能支持直接点击URL跳转，例如在微信中点击URL会首先在微信内的WebView打开，如果要跳转只能再通过Safari打开。&lt;/li&gt;
-  &lt;li&gt;从9.3.X改版之后，通用链接不支持&lt;code class=&quot;highlighter-rouge&quot;&gt;域内跳转&lt;/code&gt;了，跳转前后的两个domain必须是不同的，否则只会safari打开。跨域问题：假设当前网页的地址为 yoursite.com/a/*，如果要跳转的链接也是 yoursite.com/a/* 这个域下的，系统将不会进行拉起应用的操作，必须要跳转不同的子域，例如 yoursite.com/b/* 时，系统才会根据关联文件去判断是否要拉起应用。&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Sat, 20 May 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/05/20/iOS-%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5(Universal-Link).html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/20/iOS-%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5(Universal-Link).html</guid>
-        
-        <category>iOS</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>MacShell脚本批处理</title>
-        <description>&lt;p&gt;在Mac电脑上最常用的&lt;strong&gt;批处理脚本&lt;/strong&gt;就是Shell了，就像在Windows电脑上常用的Batch文件。收集开发中常用到的Shell脚本，如下：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：停药会狂脱。&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Mac使用Shell处理图片
-    &lt;ul&gt;
-      &lt;li&gt;一键缩放图片生成App所有尺寸icon图标&lt;/li&gt;
-      &lt;li&gt;一键缩放图片生成App所需启动图&lt;/li&gt;
-      &lt;li&gt;一键将文件夹内图片生成1x/2x/3x图片并自动重命名&lt;/li&gt;
-      &lt;li&gt;一键将文件夹内所有图片转为PNG格式&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;利用Shell脚本自动化打ipa包&lt;/li&gt;
-  &lt;li&gt;将.app文件转换为.ipa文件&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：外喷药物也不是百分百安全的，个别患者可能会出现过敏或其他不良反应，所以使用前请咨询正规医院医生。男士用 5% 含量规格，女士用 2% 含量规格，常见含有米诺地尔的品牌有达霏欣、曼迪等。&lt;/p&gt;
 
-&lt;h2 id=&quot;一shell脚本简要用法&quot;&gt;一、Shell脚本简要用法:&lt;/h2&gt;
+&lt;h3 id=&quot;生发梳和激光头盔&quot;&gt;生发梳和激光头盔&lt;/h3&gt;
 
-&lt;p&gt;在Mac的终端中，cd打开图片文件夹—&amp;gt;拖入Shell文件到终端—&amp;gt;回车–&amp;gt;输入1或2或3或4即可进行对应操作,如图&lt;/p&gt;
+&lt;p&gt;科研人员发现678nm的波长的激光，能够促进毛发生长，生发梳和激光头盔都是利用此原理，只不过激光头盔比生发梳的激光头多些而已，但原理是一样的。具体效果很有限，楼主当初还是在京东分期购买的激光头盔，怕效果不好，还只认准国外的品牌。但使用了一年多后，基本上没什么效果，而且由于停止喷米诺，脱发反而更厉害了。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/1.png&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：外用，物理刺激，无副作用。&lt;/p&gt;
 
-&lt;h2 id=&quot;二shell脚本用法示例以createiphoneiconshellsh为例&quot;&gt;二、Shell脚本用法示例(以CreateiPhoneIconShell.sh为例):&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：死贵还没用。楼主开始以为是个人原因，后来建立了一个群，聚集了四百多脱发的朋友，其中有很多使用激光头盔，没有一个说有明显效果的，还有人提议一起起诉某品牌，脱发是个慢性病，具体有无效果还真不大好具体判断。&lt;/p&gt;
 
-&lt;h3 id=&quot;21例如你要处理的图片文件放在桌面上的images文件中&quot;&gt;2.1、例如你要处理的图片文件放在桌面上的&lt;code class=&quot;highlighter-rouge&quot;&gt;images&lt;/code&gt;文件中&lt;/h3&gt;
+&lt;h3 id=&quot;中药&quot;&gt;中药&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/2.png&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;中药，不能说没效，但你能不能遇见一个靠谱的中医就不一定了。中药价格不算便宜，现在都是袋装或者颗粒，倒是挺方便。楼主用中药治疗连续一年左右，前半年和后半年时间分别在两家省级中医院抓取的药物，除了调理的肾功能强大一些外，头发没怎么见长，对我没什么用。&lt;/p&gt;
 
-&lt;h3 id=&quot;22把要作为图标的图片命名为icon&quot;&gt;2.2、把要作为图标的图片命名为icon&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：中药相对副作用小一些，中药重调理，除了雄性脱发外，其他种类脱发可以试试。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/3.png&quot; alt=&quot;图片展示图片源自网络&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：中医以“补”为主，吃药后性欲可能会变强。&lt;/p&gt;
 
-&lt;h3 id=&quot;23需要在终端中用cd命令先进入此文件夹终端输入cd空格cd后面有一个空格然后拖入你桌面的images文件夹&quot;&gt;2.3、需要在终端中用cd命令先进入此文件夹，终端输入cd空格(cd后面有一个空格)，然后拖入你桌面的&lt;code class=&quot;highlighter-rouge&quot;&gt;images&lt;/code&gt;文件夹&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：不要病急乱投医，什么“祖传老中医”，“祖传秘方”大多都是骗人的，要是真像电线杆上贴的小广告那么有效，脂溢性脱发早就不是世界性难题了。脱发市场这么大，真百分百有效早就发财了。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/4.png&quot; alt=&quot;这里写图片描述&quot; /&gt;
-&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/5.png&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;西药&quot;&gt;西药&lt;/h3&gt;
 
-&lt;h3 id=&quot;24同理再拖入所用到的shell文件然后回车确认&quot;&gt;2.4、同理，再拖入所用到的Shell文件，然后回车确认&lt;/h3&gt;
+&lt;p&gt;在市医院用西药治疗过两年时间，开的西药主要有维生素 B6，甘草锌或蛋白锌，和其他一些西药，有效果。锌元素能够促进毛发生长，B6 我记得好像是能够抑制油脂分泌吧。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/6.png&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：效果慢但是有效，且服用后不会出现类似服用非那雄胺性欲降低的副作用。&lt;/p&gt;
 
-&lt;h3 id=&quot;25显示界面如下如果需要生成appicon图标则输入数字1回车&quot;&gt;2.5、显示界面如下，如果需要生成AppIcon图标，则输入数字1，回车&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：效果比非那雄胺慢，而且也是药不能停，停药会狂脱。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/7.png&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：西药大多有副作用，不要自己配药，请到正规医院看皮肤科门诊。&lt;/p&gt;
 
-&lt;h3 id=&quot;26jpg与png注意点&quot;&gt;2.6、JPG与PNG注意点：&lt;/h3&gt;
+&lt;h3 id=&quot;食疗&quot;&gt;食疗&lt;/h3&gt;
 
-&lt;p&gt;由于我在网上找到的是&lt;code class=&quot;highlighter-rouge&quot;&gt;JPG&lt;/code&gt;图片，转为&lt;code class=&quot;highlighter-rouge&quot;&gt;PNG&lt;/code&gt;图片后，&lt;code class=&quot;highlighter-rouge&quot;&gt;Alpha通道&lt;/code&gt;颜色异常，所以有&lt;code class=&quot;highlighter-rouge&quot;&gt;CGColor&lt;/code&gt;颜色警告，正常&lt;code class=&quot;highlighter-rouge&quot;&gt;PNG&lt;/code&gt;图片处理是没有&amp;lt;…&amp;gt;部分的，有警告但不影响使用。
-&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/8.png&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;吃黑豆、黑芝麻、核桃、杂粮粥等据说能够促进头发生长的食物，我在用药物治疗的同时，把杂粮粥作为辅助治疗，具体效果不能精确评测，但这些食材没什么副作用，只能说有益无害吧。&lt;/p&gt;
 
-&lt;h2 id=&quot;三注意点&quot;&gt;三、注意点&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：无副作用，传说能促进毛发生长。&lt;/p&gt;
 
-&lt;h3 id=&quot;31生成appicon注意点苹果官方要求png格式&quot;&gt;3.1、生成AppIcon注意点(苹果官方要求&lt;code class=&quot;highlighter-rouge&quot;&gt;PNG&lt;/code&gt;格式)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：吃多会变胖。&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;图片名称需要为&lt;strong&gt;icon.png&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;尺寸目前包括40×40 58×58 60×60 80×80 87×87 120×120 180×180&lt;/li&gt;
-  &lt;li&gt;如果需要特殊尺寸，在下方的for循环处添加相应的数字即可&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;洗头偏方&quot;&gt;洗头偏方&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/muzipiao/GitHubImages/blob/master/CreateiPhoneIconShellBlogImages/9.png&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;我也是在论坛，看到别人分享的，据说可以控油。由于是外用的，就去中药房买了些试试，亲测对生发效果不大，控油有较好效果，但比较麻烦。&lt;/p&gt;
 
-&lt;h3 id=&quot;32生成app启动图片launchimage注意点苹果官方要求png格式&quot;&gt;3.2、生成App启动图片LaunchImage注意点(苹果官方要求&lt;code class=&quot;highlighter-rouge&quot;&gt;PNG&lt;/code&gt;格式)&lt;/h3&gt;
+&lt;p&gt;偏方配比，桑叶65g  侧柏叶50g  苦丁茶70g  加2升水大火煮20分钟 每天洗一次。不一定是这个重量，比例正确就行。另外 把洗过大米的大米水存起来，使其发酵，用来洗头可以健发固发 这两个办法可以同时使用。&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;iPhone屏幕尺寸一览&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;iPhone 6Plus/6SPlus/7Plus (Retina HD 5.5 @3x): 1242 x 2208&lt;/strong&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;iPhone 6/6S/7 (Retina HD 4.7 @2x): 750 x 1334&lt;/strong&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;iPhone 5/5S(Retina 4 @2x): 640 x 1136&lt;/strong&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;iPhone 4/4S(@2x): 640 x 960&lt;/strong&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：有较好的控油效果。&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;要作为启动图片的名称需要为LaunchImage.png；&lt;/li&gt;
-  &lt;li&gt;目前按照屏幕尺寸默认生成尺寸为960x640，1134x640，1334x750，2208x1242；&lt;/li&gt;
-  &lt;li&gt;如果需要其他尺寸，方法同上，自己到Shell文件中修改相应尺寸数字即可。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;：熬制比较麻烦，且头发易干黄。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;
-#&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;一键生成App启动图片LaunchImage&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;
-#自动生成LaunchImage
-LaunchWithSize() {
-case $1 in
-&quot;960&quot;)
-sips -z 960 640 LaunchImage.png --out LaunchImageFolder/LaunchImage_960x640.png
-;;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：洗完用洗发膏洗一下，因为洗后会比较干。&lt;/p&gt;
 
-&quot;1136&quot;)
-sips -z 1136 640 LaunchImage.png --out LaunchImageFolder/LaunchImage_1134x640.png
-;;
+&lt;h2 id=&quot;治疗过程简述&quot;&gt;治疗过程简述&lt;/h2&gt;
 
-&quot;1334&quot;)
-sips -z 1334 750 LaunchImage.png --out LaunchImageFolder/LaunchImage_1334x750.png
-;;
+&lt;p&gt;简述一下自己的治疗过程，供大家参考，希望大家少踩一些坑。&lt;/p&gt;
 
-&quot;2208&quot;)
-sips -z 2208 1242 LaunchImage.png --out LaunchImageFolder/LaunchImage_2208x1242.png
-;;
-esac
-}
+&lt;h3 id=&quot;市医院治疗&quot;&gt;市医院治疗&lt;/h3&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;本人是脂溢性脱发，从大二开始轻微脱发，先是到市医院确诊，并吃西药治疗，给开的甘草锌颗粒，维生素 B6，还有一些其他的西药，具体药物名称，时间长忘记了。吃了近两年时间，可能是刚开始脱发，容易治疗的原因吧，确实有作用，但在我停药不到半年后，又开始脱发。&lt;/p&gt;
 
-&lt;h3 id=&quot;33批量生成1x2x3x图片&quot;&gt;3.3、批量生成1x，2x，3x图片&lt;/h3&gt;
+&lt;h3 id=&quot;省医院治疗&quot;&gt;省医院治疗&lt;/h3&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;将当前文件夹下所有图片缩放为1x，2x，3x图片，并自动命名&lt;/li&gt;
-  &lt;li&gt;注意：如果icon.png和LaunchImage.png也在当前图片文件下，也会生成1x，2x，3x图片&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;后来在省医院治疗，开的就是米诺地尔喷剂和保法止（非那雄胺片），当时米诺地尔好像 150 左右，非那雄胺片好像 200 多，外用米诺地尔喷剂+口服非那雄胺，大概不到 1 年就有了明显的效果，头发增多了，但和正常水平还是有明显的差距，于是继续用药，用了2年左右，头发恢复更好些，光线不强的时候看不出差别，但如果站在太阳底下照镜子，还是发现部分比较稀的。&lt;/p&gt;
 
-&lt;h3 id=&quot;34批量将图片转为png格式&quot;&gt;3.4、批量将图片转为PNG格式&lt;/h3&gt;
+&lt;p&gt;由于天天喷米诺地尔，喷完要洗手，还要天天吃药，厌倦了，心想如果能保持这么多的头发也可以，于是停药了。但停药3个月左右时，发现又重蹈覆辙，开始狂脱。。。&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;会将当前文件夹下所有图片转换为PNG格式；&lt;/li&gt;
-  &lt;li&gt;注意，用Shell脚本和用苹果图片预览工具另存为转换，都是仅仅转换图片格式，简单的将缺失Alpha通道色都补为1，体积会变大；&lt;/li&gt;
-  &lt;li&gt;例如JPEG图片格式，只包含RGB通道颜色，体积小，适合网络传输和打印；而PNG图片格式，除了包含RGB颜色外，还包含Alpha透明通道；&lt;/li&gt;
-  &lt;li&gt;PNG图片格式是苹果官方推荐的格式，因为iOS系统会用到大量的透明效果，而且PNG图片支持硬解码，使界面更流畅。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;中医院治疗&quot;&gt;中医院治疗&lt;/h3&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;如果您觉得有所帮助，请在&lt;a href=&quot;https://github.com/muzipiao/MacShell&quot;&gt;GitHub&lt;/a&gt;上赏个Star ⭐️，您的鼓励是我前进的动力。&lt;/p&gt;
+&lt;p&gt;年纪轻轻就秃头怎么行？西药不能停药，米诺地尔和非那雄安不能停药，于是想试试中药，抱着侥幸的心里，万一治好了呢！&lt;/p&gt;
 
-&lt;h2 id=&quot;shell脚本截图&quot;&gt;Shell脚本截图&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/muzipiao/GitHubImages/master/CreateiPhoneIconShellBlogImages/10.png&quot; alt=&quot;Shell脚本截图&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;于是到省中医院，第一附院，第三附院，多家咨询，医生都是来者不拒，不说有效无效，不给你打保票，只说吃了药会好些，没办法，只有先试试了。&lt;/p&gt;
+
+&lt;p&gt;吃了接近 5 个月，没看到效果，但中药里面有菟丝子类补肾的药物，确实起作用了，早晨起来搭帐篷，性欲增强了。感觉那个医生太糊弄不靠谱，于是换了家中医院。在这家医院连续吃了接近1年左右的中药，不能说没用，头发的确不油了，但生发效果基本上没看到。&lt;/p&gt;
+
+&lt;p&gt;要知道，吃中药是很麻烦的事，即使在药店熬好袋装放冰箱里，还是很麻烦，于是就停掉了。中药这东西，不能说没用，需要缘分，看能不能碰到靠谱的医生，不过我连续吃中药一年多确实没什么大的作用。&lt;/p&gt;
+
+&lt;h3 id=&quot;激光治疗&quot;&gt;激光治疗&lt;/h3&gt;
+
+&lt;p&gt;后来，药不想吃了，了解到激光生发，想试试，毕竟激光属于物理刺激，没有毒副作用，于是先买了凯仕乐生发梳，后台又买了丝若得，没副作用但也没什么正作用。&lt;/p&gt;
+
+&lt;p&gt;最后，各种方法该试的都试了，年龄大了也佛系了。目前用米诺地尔喷剂维持发量，没有进行其他治疗。&lt;/p&gt;
+
+&lt;p&gt;这是我的脱发治疗简史，每个脱发的朋友都有一部治疗脱发的血泪史！&lt;/p&gt;
+
+&lt;h2 id=&quot;友情提示&quot;&gt;友情提示&lt;/h2&gt;
+
+&lt;p&gt;我是脂溢性脱发，脂溢性脱发目前没有发现根治的方法，只有用药物保持。&lt;/p&gt;
+
+&lt;p&gt;如果不是脂溢性脱发，你应该庆幸，大部分都是可以根治的。具体怎么区分，看家族遗传史，以及去省级市级的正规医院皮肤科去诊断。&lt;/p&gt;
+
+&lt;p&gt;特别提醒各位朋友，不能病急乱投医，微信 QQ 等非普通渠道推广的药物，大多无证无依据，损失金钱事小，吃坏身体事大，而且一旦出事，网络作案追查难度大，警察不一定接案，所以从微信 QQ 等不明网络渠道购买药物或仪器，尤其是口服药物，切记&lt;strong&gt;慎重！慎重！慎重！&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;最后，保持一颗乐观的心，祝愿各位脱发的朋友生发成功，拥有一头乌黑浓密的头发！欢迎进 QQ 群 555343379 反馈交流。&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;//shang.qq.com/wpa/qunwpa?idkey=d772854b8bc7050d2c5f4eec3d893ed423db262de807d04c96de2e5f377fb90f&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;//pub.idqqimg.com/wpa/images/group.png&quot; alt=&quot;非那_米诺_激光_中药&quot; title=&quot;非那_米诺_激光_中药&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 21 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2016/03/21/MacShell%E8%84%9A%E6%9C%AC%E6%89%B9%E5%A4%84%E7%90%86.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/03/21/MacShell%E8%84%9A%E6%9C%AC%E6%89%B9%E5%A4%84%E7%90%86.html</guid>
+        <link>http://localhost:4000/2016/03/21/%E8%84%B1%E5%8F%91%E6%B2%BB%E7%96%97%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/03/21/%E8%84%B1%E5%8F%91%E6%B2%BB%E7%96%97%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93.html</guid>
         
-        <category>Shell</category>
+        <category>雄脱</category>
         
+        <category>脂溢性脱发</category>
+        
+        
+        <category>脱发</category>
         
       </item>
     

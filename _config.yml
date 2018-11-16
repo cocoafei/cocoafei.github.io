@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: '程序员的hair'
 description: '来自一个脱发程序员gg的分享！'
-keyword: '脱发, 程序员, 雄性脱发, 丝若得'
+keyword: '脱发, 脂溢性脱发, 雄性脱发, 程序员, 丝若得, 非那雄胺, 米诺地尔'
 url: 'https://cocoafei.github.io/' # your host
 
 # if you don't need baseurl, you should leave this value blank.
@@ -14,7 +14,7 @@ nav:
 
 # Footer
 footer:
-  since: 2011
+  since: 2017
 
 # Author 配置博主信息
 author: 'cocoafei'
@@ -26,12 +26,13 @@ avatar: '/assets/img/profile.png'
 search: true
 
 # Night mode
-nightMode: false
+nightMode: true
 
-# Comments 评论功能
+# https://liaokeyu.disqus.com/embed.js
+# Comments 评论功能'https://https-cocoafei-github-io.disqus.com/embed.js'
 comments:
   disqus: false
-  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+  disqus_url: 'https://https-cocoafei-github-io.disqus.com/embed.js'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
@@ -53,6 +54,7 @@ sns:
   # juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   # instagram: '//www.instagram.com/steveliaocn'
   github: '//github.com/cocoafei'
+  # mail: 'hairupup@126.com'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
